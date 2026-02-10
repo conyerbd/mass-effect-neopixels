@@ -1,5 +1,3 @@
-#include <Arduino.h>
-#line 1 "C:\\Users\\jhal_\\AppData\\Local\\Temp\\.arduinoIDE-unsaved2026018-23076-fz55nz.o4syr\\sketch_jan18a\\sketch_jan18a.ino"
 #include <Adafruit_NeoPixel.h>
 #include <EEPROM.h>
 
@@ -21,7 +19,7 @@
 // --- PATTERN CONFIGURATION ---
 #define NUM_PATTERNS   3            // Total number of patterns
 #define EEPROM_ADDR    0            // EEPROM address for pattern storage
-#define MIN_BRIGHTNESS 51           // 20% floor brightness (51/255 = 0.2)
+#define MIN_BRIGHTNESS 13           // 5% floor brightness (13/255 = 0.05)
 #define MAX_BRIGHTNESS 255          // 100% brightness
 
 // --- NEOPIXEL OBJECTS ---
@@ -41,14 +39,6 @@ int strip2Position = 0;
 int strip1Direction = 1;
 int strip2Direction = 1;
 
-#line 23 "C:\\Users\\jhal_\\AppData\\Local\\Temp\\.arduinoIDE-unsaved2026018-23076-fz55nz.o4syr\\sketch_jan18a\\sketch_jan18a.ino"
-void setup();
-#line 44 "C:\\Users\\jhal_\\AppData\\Local\\Temp\\.arduinoIDE-unsaved2026018-23076-fz55nz.o4syr\\sketch_jan18a\\sketch_jan18a.ino"
-void loop();
-void patternSolidBlue();
-void patternPulsingBlue();
-void patternRotatingBouncing();
-#line 23 "C:\\Users\\jhal_\\AppData\\Local\\Temp\\.arduinoIDE-unsaved2026018-23076-fz55nz.o4syr\\sketch_jan18a\\sketch_jan18a.ino"
 void setup() {
   // 1. TURN OFF ONBOARD PIXEL
   onboard.begin();
